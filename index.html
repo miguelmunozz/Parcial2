@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,127 +8,149 @@
 </head>
 <body>
     <header>
-        <img src="images/logo.png" alt="logo">
-        <nav><ul>
-            <li><a href="">Disney+</a></li>
-            <li><a href="">PARKS & TRAVEL</a></li>
-            <li><a href="">MOVIES</a></li>
-            <li><a href="">SHOP</a></li>
-            <li ><a  href="">MORE</a></li>
-            <li>
-                <a href="">LOG IN</a>
-            </li>
-            <li><input type="text" placeholder="Search"></li>
-        </ul></nav>
+        <nav class="navegacion">  
+            <ul>
+                <li><img src="images/logo.png" alt="logo"></li>
+                <li><a href="">DISNEY+</a></li>
+                <li><a href="">PARKS & TRAVEL</a></li>
+                <li><a href="">MOVIES</a></li>
+                <li><a href="">SHOP</a></li>
+                <li><a href="">MORE</a></li>
+            </ul>
+        </nav>
+        <div class="acciones">
+            <a href="" class="login">LOG IN</a>
+            <div class="busqueda">
+                <input type="text" placeholder="Search">
+                <button type="submit">🔍</button>
+            </div>
+        </div>
     </header>
- <main>
-    <section class="banner">
-     <p>Experience Snow White, now playing only in theaters!</p>
-     <button>Get Tickets Now</button>
-     <button>Learn More</button>
-    </section>
+    <main>
 
-    <section id="snow-white">
-      <article class="sw-related">
-        <img src="images/shop-image-1.png" alt="">
-        <p>A Special Performance
-            Rachel Zegler Performs “Waiting on a Wish” at the Castle that Inspired the Original Snow White</p>
-        <a href="">WATCH NOW</a>
-      </article>
-      <article class="sw-related">
-        <img src="images/shop-image-2.png" alt="">
-        <p>The Art of Fairytale Fashion
-            Legendary Costume Designer Sandy Powell Brings Fairytale Fashion to the New Fil</p>
-        <a href="">WATCH NOW</a>
-      </article>
-      <article class="sw-related">
-        <img src="images/shop-image-3.png" alt="">
-        <p>Disney Store
-            NEW Disney’s Snow White 11” Limited Edition Doll</p>
-        <a href="">SHOP NOW</a>
-      </article>
-      <article class="sw-related">
-        <img src="images/shop-image-4.png" alt="">
-        <p>A Musical Conversation with Pasek and Paul
-            Rachel Zegler and the Songwriting Duo Reminisce About Bringing the Soundtrack to Life</p>
-        <a href="">WATCH NOW</a>
-      </article>
-    </section>
-    <section id="explore">
-        <h1>Explore more Disney +</h1>
-        <article class="explore-movie">
-            <img src="images/disney-plus-1.png" alt="">
-            <p>Moana 2
-                Now available, only on Disney+
+        <section class="banner">
+            <div class="contenido-banner">
+                <img src="images/snow-white.png" alt="Snow White">
+                <p class="desc-banner">
+                    Experience Snow White, now playing only in theaters!
                 </p>
-            <a href="">AVAILABLE ON DISNEY+</a>
-        </article>
-        <article class="explore-movie">
-            <img src="images/disney-plus-2.png" alt="">
-            <p>Daredevil: Born Again
-                Marvel Television’s all-new series is now streaming on Disney+</p>
-            <a href="">STREAM NOW</a>
-        </article>
-        <article class="explore-movie">
-            <img src="images/disney-plus-3.png" alt="">
-            <p>Next on Disney+
-                Everything new coming to Disney+ this month!</p>
-            <a href="">LEARN MORE</a>
-        </article>
-    </section>
-    <section id="coming">
-  <h1>Coming soon to disney +</h1>
-  <article class="coming-movie">
-    <img src="images/movies-1.jpeg" alt="">
-    <p>Alexander and the Terrible, Horrible, No Good, Very Bad Road Trip
-        Streaming March 28, 2025</p>
-  </article>
-  <article class="coming-movie">
-    <img src="images/movies-2.jpeg alt=">
-    <p>Andor Season 2
-        Streaming April 12, 2025</p>
-  </article>
-  <article class="coming-movie">
-    <img src="images/movies-3.jpeg" alt="">
-    <p>Ironheart
-        Streaming June 24, 2025</p>
-  </article>
-    <article class="coming-movie">
-        <img src="images/movies-4.jpeg" alt="">
-        <p>Percy Jackson and The Olympians Season 2
-            Coming Soon</p>
-      </article>
-      <article class="coming-movie">
-        <img src="images/movies-5.jpeg" alt="">
-        <p>The Doonies
-            Coming Soon</p>
-      </article>
-    </section>
-    <section class="vacation">
-        <article class="vacation-info">
-              <img src="images/disney-parks-1.png" alt="">
-              <p>Disneyland® Resort
-                  Save up to 20% on select stays at Disneyland® Resort Hotels from March 23 to May 15, 2025.
-                  </p>
-              <a href="">LEARN MORE</a>
-           </article>
-           <article class="vacation-info">
-              <img src="images/disney-parks-2.png" alt="">
-              <p>Disneyland® Resort 70th Celebration
-                  Book early and save on select stays at Disneyland® Resort Hotels from May 16 to September 26, 2025.
-                  </p>
-              <a href="">LEARN MORE</a>
-           </article>
+                <div class="botones-banner">
+                    <button id="btn-gettickets">Get Tickets Now</button>
+                    <button id="btn-learnmore">Learn More</button>
+                </div>
+            </div>      
         </section>
-        <section id="more-disney">
-         <h1>Get More Disney Every Day</h1>
-         <h3>Special Offer</h3>
-         <p>Earn a $450 Disney statement credit. New Disney® Premier Visa® Cardmembers only.</p>
-         <h3>Special Vacation Financing</h3>
-         <p>Enjoy 0% promotional APR for 6 months on select Disney vacation packages.</p>
-         <button>LEARN MORE</button>
+
+        <section id="seccion-shop">
+            <article class="card">
+                <img src="images/shop-image-1.png" alt="">
+                <div class="card-body">
+                    <h3>A Special Performance</h3>
+                    <p>Rachel Zegler Performs “Waiting on a Wish” at the Castle that Inspired the Original Snow White</p>
+                    <a href="">WATCH NOW</a>
+                </div>          
+            </article>
+            <article class="card">
+                <img src="images/shop-image-2.png" alt="">
+                <div class="card-body">
+                    <h3>The Art of Fairytale Fashion</h3>
+                    <p>Legendary Costume Designer Sandy Powell Brings Fairytale Fashion to the New Fil</p>
+                    <a href="">WATCH NOW</a>
+                </div>     
+            </article>
+            <article class="card">
+                <img src="images/shop-image-3.png" alt="">
+                <div class="card-body">
+                    <h3>Disney Store</h3>
+                    <p>NEW Disney’s Snow White 11” Limited Edition Doll</p>
+                    <a href="">SHOP NOW</a>
+                </div>
+            </article>
+            <article class="card">
+                <img src="images/shop-image-4.png" alt="">
+                <div class="card-body">
+                    <h3>A Musical Conversation with Pasek and Paul</h3>
+                    <p>Rachel Zegler and the Songwriting Duo Reminisce About Bringing the Soundtrack to Life</p>
+                    <a href="">WATCH NOW</a>
+                </div>      
+            </article>
         </section>
- </main>
+
+        <section id="seccion-explore">
+            <h1>Explore More Disney +</h1>
+            <article class="explore-movie">
+                <img src="images/disney-plus-1.png" alt="">
+                <p>Moana 2 is now available, only on Disney+.</p>
+                <a href="">AVAILABLE ON DISNEY+</a>
+            </article>
+            <article class="explore-movie">
+                <img src="images/disney-plus-2.png" alt="">
+                <p>Marvel Television’s all-new series is now streaming on Disney+.</p>
+                <a href="">STREAM NOW</a>
+            </article>
+            <article class="explore-movie">
+                <img src="images/disney-plus-3.png" alt="">
+                <p>Everything new coming to Disney+ this month!</p>
+                <a href="">LEARN MORE</a>
+            </article>
+        </section>
+
+        <section id="seccion-coming">
+            <h1>Coming soon to disney +</h1>
+            <article class="coming-movie">
+                <img src="images/movies-1.jpeg" alt="">
+                <p>Alexander and the Terrible, Horrible, No Good, Very Bad...</p>
+                <p>Streaming March 28, 2025</p>
+            </article>
+            <article class="coming-movie">
+                <img src="images/movies-2.jpeg alt=">
+                <p>Andor Season 2</p>
+                <p>Streaming April 12, 2025</p>
+            </article>
+            <article class="coming-movie">
+                <img src="images/movies-3.jpeg" alt="">
+                <p>Ironheart</p>
+                <p>Streaming June 24, 2025</p>
+            </article>
+            <article class="coming-movie">
+                <img src="images/movies-4.jpeg" alt="">
+                <p>Percy Jackson and The Olympians Season 2</p>
+                <p>Coming Soon</p>
+            </article>
+            <article class="coming-movie">
+                <img src="images/movies-5.jpeg" alt="">
+                <p>The Doonies</p>
+                <p>Coming Soon</p>
+            </article>
+        </section>
+
+        <section id="seccion-vacation">
+            <h1>Vacation with Disney Parks</h1>
+            <article class="vacation-info">
+                <img src="images/disney-parks-1.png" alt="">
+                <p>Disneyland® Resort</p>
+                <p>Save up to 20% on select stays at Disneyland® Resort Hotels from March 23 to May 15, 2025. Subject to available and restrictions.</p>
+                <a href="">LEARN MORE</a>
+            </article>
+            <article class="vacation-info">
+                <img src="images/disney-parks-2.png" alt="">
+                <p>Disneyland® Resort</p>
+                <p>Book early and save on select stays at a Disneyland® Resort Hotel during the Disneyland® Resort
+                    70th Celebration from May 16 to September 26, 2025! Subject to availability and restrictions.</p>
+                <a href="">LEARN MORE</a>
+            </article>
+        </section>
+
+        <section id="seccion-more">
+            <h1>Get More Disney Every Day</h1>
+            <h3>Special Offer</h3>
+            <p>Earn a $450 Disney statement credit. New Disney® Premier Visa® Cardmembers only.</p>
+            <h3>Special Vacation Financing</h3>
+            <p>Enjoy 0% promotional APR for 6 months on select Disney vacation packages.</p>
+            <button>LEARN MORE</button>
+        </section>
+
+    </main>
     <footer>
         <img src="images/logo.png" alt="">
         <div id="links1">
@@ -151,11 +173,5 @@
         <p>© Disney © Disney and its related entities</p>
     </footer>
 </body>
-<script src="script.js"></script>
-
-
-
-
-
 
 </html>

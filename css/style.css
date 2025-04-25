@@ -3,51 +3,180 @@
     padding: 0;
   }
 
-  header {
+header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 40px;
+    padding: 10px 20px;
     background-color: white;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
 }
 
-header img {
-    height: 40px;
-}
-
-nav ul {
+.navegacion ul {
     display: flex;
-    align-items: center;
-    gap: 25px;
+    gap: 20px;
     list-style: none;
     margin: 0;
     padding: 0;
+    align-items: center;
 }
 
-nav ul li {
-    color: black;
-}
-
-nav ul li a {
+.navegacion a {
     text-decoration: none;
     color: black;
-    font-weight: 600;
+    font-weight: bold;
     font-size: 14px;
-    transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
-    color: #f9d342; 
+.acciones {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
-nav ul li input[type="text"] {
-    padding: 6px 10px;
-    border-radius: 4px;
+.login {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.busqueda {
+    display: flex;
+    align-items: center;
+    border: 1px solid #aaa;
+    border-radius: 0;
+    padding: 5px 10px;
+}
+
+.busqueda input {
     border: none;
-    font-size: 14px;
+    outline: none;
+    background: transparent;
+    padding: 5px;
 }
 
+.busqueda button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    color: #0077c2;
+}
 
+    /*BANNER*/
+
+.banner {
+    height: 100vh;
+    background-image: url('../images/banner-background.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+    color: white;
+}
+
+.contenido-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    max-width: 600px;
+}
+
+.contenido-banner img {
+    width: 100%;
+    max-width: 100em;
+    margin-bottom: 20px;
+}
+
+.desc-banner {
+    font-size: 18px;
+    margin-bottom: 30px;
+    
+}
+
+.botones-banner {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+}
+
+#btn-gettickets {
+    background-color: #e61d23;
+    color: white;
+    padding: 12px 60px;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#btn-learnmore {
+    background: transparent;
+    color: white;
+    padding: 12px 60px;
+    border: 2px solid white;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn-gettickets,
+.btn-learnmore:hover {
+    opacity: 0.8;
+}
+
+/* SHOP */
+
+#seccion-shop {
+    background-color: #5b4ebf;
+    padding: 60px 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+  
+.card {
+    background-color: #f3d557; 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 0px;
+    overflow: hidden;
+    box-shadow: none;
+    height: 70vh;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+  }
+  
+  .card-body {
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .card-body h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .card-body p {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    font-weight: 400;
+  }
+  
+  .card-body a {
+    font-weight: bold;
+    text-decoration: underline;
+    color: black;
+    font-size: 0.95rem;
+  }
