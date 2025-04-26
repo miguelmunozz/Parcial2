@@ -9,6 +9,7 @@ header {
     justify-content: space-between;
     padding: 10px 20px;
     background-color: white;
+    padding-bottom: 0;
 }
 
 .navegacion ul {
@@ -132,10 +133,10 @@ header {
 
 #seccion-shop {
     background-color: #5b4ebf;
-    padding: 60px 40px;
+    padding: 40px 60px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 40px;
+    gap: 20px;
 }
   
 .card {
@@ -147,36 +148,225 @@ header {
     overflow: hidden;
     box-shadow: none;
     height: 70vh;
-  }
+}
   
-  .card img {
+.card img {
     width: 100%;
     height: 70%;
     object-fit: cover;
-  }
+}
   
-  .card-body {
+.card-body {
     padding: 20px 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
+}
   
-  .card-body h3 {
+.card-body h3 {
     font-size: 1.1rem;
     font-weight: bold;
     margin-bottom: 10px;
-  }
+}
   
-  .card-body p {
+.card-body p {
     font-size: 0.9rem;
     margin-bottom: 20px;
     font-weight: 400;
-  }
+}
   
-  .card-body a {
+.card-body a {
     font-weight: bold;
     text-decoration: underline;
     color: black;
     font-size: 0.95rem;
-  }
+}
+
+/* EXPLORE */
+
+#seccion-explore {
+    background-color: rgb(0, 59, 56);
+    padding: 40px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    color: white;
+}
+
+.explore-movies {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.explore-movie {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.explore-movie img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    margin-bottom: 40px;
+}
+
+.explore-movie p {
+    margin-bottom: 20px;
+}
+
+.explore-movie a {
+    font-weight: bold;
+    text-decoration: underline;
+    color: white;
+}
+
+/* COMING */
+
+#seccion-coming {
+    background-color: #ddd;
+    padding: 40px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding-bottom: 0;
+}
+
+.coming-movies {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.coming-movie {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+
+.coming-movie img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.movie{
+    display: flex;
+    text-align: left;
+}
+
+.fecha-movie{
+    display: flex;
+    text-align: left;
+    color: rgb(99, 99, 99);
+}
+
+/* VACATION */
+
+#seccion-vacation {
+    background-color: #ddd;
+    padding: 40px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding-top: 0;
+}
+
+.vacation {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.vacation-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    background-color: white;
+}
+
+.vacation-info img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    padding-bottom: 10px;
+}
+
+.vacation-info a {
+    font-weight: bold;
+    text-decoration: underline;
+    color: black;
+    padding-top: 10px;
+}
+
+/* MORE */
+
+#seccion-more {
+    height: 100vh;
+    background-image: url('../images/more-background.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    color: rgb(0, 0, 112);
+    justify-content: right;
+}
+
+.more-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    padding-right: 80px;
+    gap: 20px;
+}
+
+.more-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#btn-more {
+    background-color: rgb(133, 48, 133);
+    color: white;
+    padding: 12px 60px;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 40px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-size: 12px;
+}
+
+#links1 a {
+    color: rgb(99, 99, 99);
+    text-decoration: none;
+    padding-right: 10px;
+}
+
+#links2 a {
+    color: black;
+    text-decoration: none;
+    padding-right: 10px;
+}
+
+footer p{
+    color: rgb(99, 99, 99);
+}
